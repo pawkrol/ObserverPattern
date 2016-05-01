@@ -47,9 +47,9 @@ public class LinearGraphFragment extends ObserverFragment{
 
     @Override
     public void update(Subject subject) {
-        if (getView() == null) return;
-
         prevActiveSubject = subject;
+
+        if (getView() == null) return;
 
         if (subject instanceof DataSubject) {
             lineChart.setData(

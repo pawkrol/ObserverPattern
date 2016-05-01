@@ -51,9 +51,9 @@ public class BarGraphFragment extends ObserverFragment{
 
     @Override
     public void update(Subject subject) {
-        if (getView() == null) return;
-
         prevActiveSubject = subject;
+
+        if (getView() == null) return;
 
         if (subject instanceof DataSubject) {
             barChart.setData(

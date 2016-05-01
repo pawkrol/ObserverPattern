@@ -36,9 +36,9 @@ public class DataFragment extends ObserverFragment {
 
     @Override
     public void update(Subject subject) {
-        if (getView() == null) return;
-
         prevActiveSubject = subject;
+
+        if (getView() == null) return;
 
         if (subject instanceof DataSubject) {
             dataListAdapter =

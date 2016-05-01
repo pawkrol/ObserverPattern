@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         dataSubject.attach(dataFragment);
         dataSubject.attach(linearGraphFragment);
         dataSubject.attach(barGraphFragment);
+        dataSubject.notifyAllObservers();
 
         collectionPagerAdapter.addFragment(dataFragment);
         collectionPagerAdapter.addFragment(linearGraphFragment);
